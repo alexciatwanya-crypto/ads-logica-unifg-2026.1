@@ -172,7 +172,7 @@ def buscar_aluno(nome):
             return linha
     return None
 
-git
+#git
 #-------------------------
 if __name__ == "__main__":
     print("=== TESTE DO MÓDULO matriz_diario.py ===\n")
