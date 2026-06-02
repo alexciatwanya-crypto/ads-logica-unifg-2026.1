@@ -1,3 +1,4 @@
+#  matriz_diario.py  
 
 # A MATRIZ PRINCIPAL do sistema
 # Cada linha = [nome, nota1, nota2, nota3]
@@ -167,12 +168,16 @@ def buscar_aluno(nome):
     Retorna a linha completa de um aluno ou None se não existir.
     Útil para o Aluno 4 (POO) consultar os dados.
     """
-       for linha in diario:
+    for linha in diario:
         if linha[0] == nome:
             return linha
     return None
 
-#-------------------------
+
+# ------------------------------------------------------------
+# TESTE LOCAL — só roda quando você executa este arquivo direto
+# (não interfere quando o main.py importar este módulo)
+# ------------------------------------------------------------
 if __name__ == "__main__":
     print("=== TESTE DO MÓDULO matriz_diario.py ===\n")
 
@@ -206,4 +211,4 @@ if __name__ == "__main__":
     # Mostra matriz crua para entender a estrutura
     print("Matriz diario (lista de listas):")
     for i, linha in enumerate(diario):
-        print(f"  diario[{i}] = {linha}")
+          print(f"  diario[{i}] = {linha}")
